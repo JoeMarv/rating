@@ -1,0 +1,183 @@
+body {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Overpass;
+    font-size: 15px;
+    height: 160vw
+}
+
+.card {
+    background-color: hsl(216, 12%, 8%);
+    width: 70vw;
+    height: 80vw;
+    margin: 40vw 0vw 0vw 0vw;
+    border-radius: 5vw;
+    padding: 6vw;
+}
+
+/*rating state*/
+.rating-state {
+    
+}
+
+.icon {
+    background-color:hsl(213, 19%, 18%);
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    margin-left: 2vw;
+}
+
+.icon img {
+    width: 5vw;
+    height: 5vw
+}
+
+.writing {
+    color: hsl(0, 0%, 100%)
+}
+
+.writing h2 {
+    margin: 6vw 0vw 3vw 0vw;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.writing span {
+    line-height: 2vw;
+    color: hsl(0, 0%, 70%);
+    font-weight: 400;
+    font-size: 0.85em
+}
+
+.button-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.rating-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4vw 0vw
+}
+
+.rating-button button {
+    margin: 2vw;
+    background-color:hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 70%);
+    border: none;
+    border-radius: 50%;
+    padding: 3vw 4vw;
+    transition: .8secs;
+    cursor: pointer
+}
+
+.rating-button button:hover {
+    transition: .8secs;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    color:hsl(0, 0%, 100%)
+}
+
+.rating-button button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%)
+}
+
+.submit-button button {
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5vw;
+    padding: 3vw 4vw; 
+    width: 64vw;
+    cursor: pointer;
+}
+
+.submit-button button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: .8secs;
+    cursor: pointer
+}
+
+/*thank you state*/
+.thank-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none
+}
+
+.thank-image {
+    padding-top: 4vw;
+    width: 32vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select-text {
+    background-color: hsl(213, 19%, 18%);
+    margin-top: 4vw;
+    color: hsl(25, 97%, 53%);
+    width: 60%;
+    padding: 1.5vw;
+    font-weight: 400;
+    border-radius: 5vw;
+}
+
+/*desktop site*/
+@media screen and (min-width: 768px) {
+    .card {
+        width: 45vw;
+        height: auto;
+        margin: 0vw;
+    }
+
+    .icon {
+        padding: 2vw;
+        width: 2vw;
+        height: 2vw;
+        margin-left: 1vw;
+    }
+
+    .icon img {
+        width: 2vw;
+        height: 2vw
+    }
+
+    .writing h2 {
+        font-size: 2em;
+    }
+
+    .writing span {
+        font-size: 1em;
+        line-height: 3vw;
+    }
+
+    .rating-button {
+        padding: 3vw 0vw
+    }
+
+    .rating-button button {
+        padding: 2vw 2.8vw;
+        margin: 1.5vw
+    }
+
+    .submit-button button {
+        width: 46vw;
+        padding: 2vw 4vw;
+    }
+}
